@@ -1,11 +1,21 @@
 package com.frikiteam.socialnetworkcontracts.socialNetwork.contracts.commands;
 
-import lombok.Value;
+import lombok.Getter;
+import lombok.Setter;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-@Value
+@Getter
+@Setter
 public class RegisterEventQualification {
     @TargetAggregateIdentifier
     private String eventQualificationId;
     private int starsQuantity;
+
+    public RegisterEventQualification() {
+    }
+
+    public RegisterEventQualification(String eventQualificationId, int starsQuantity) {
+        this.eventQualificationId = eventQualificationId;
+        this.starsQuantity = starsQuantity;
+    }
 }
