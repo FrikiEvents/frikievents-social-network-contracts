@@ -8,5 +8,4 @@ public class RegisterComment {
     @TargetAggregateIdentifier
     private String commentId;
     private String content;
-
 }

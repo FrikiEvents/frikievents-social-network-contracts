@@ -8,5 +8,4 @@ import java.time.Instant;
 public class CommentEdited {
     private String commentId;
     private String content;
-    private Instant occurredOn;
 }
