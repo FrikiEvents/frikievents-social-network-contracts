@@ -9,7 +9,7 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 public class EditEventQualification {
     @TargetAggregateIdentifier
     private String eventQualificationId;
-    private int starsQuantity;
+    private Integer starsQuantity;
 
     public EditEventQualification() { }
 

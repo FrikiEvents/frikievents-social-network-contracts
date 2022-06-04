@@ -8,16 +8,17 @@ import java.time.Instant;
 @Getter
 @Setter
 public class EventQualificationRegistered {
-    private String commentId;
-    private String content;
+    private String eventQualificationId;
+    private Integer starsQuantity;
     private Instant occurredOn;
 
     public EventQualificationRegistered() {
     }
 
-    public EventQualificationRegistered(String commentId, String content, Instant occurredOn) {
-        this.commentId = commentId;
-        this.content = content;
+
+    public EventQualificationRegistered(String eventQualificationId, Integer starsQuantity, Instant occurredOn) {
+        this.eventQualificationId = eventQualificationId;
+        this.starsQuantity = starsQuantity;
         this.occurredOn = occurredOn;
     }
 }
